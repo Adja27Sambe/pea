@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E8F5E9"/>
+      <stop offset="100%" stop-color="#C8E6C9"/>
+    </linearGradient>
+    <linearGradient id="h" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#E91E63"/>
+      <stop offset="100%" stop-color="#C2185B"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="300" fill="url(#g)"/>
+  <circle cx="50" cy="50" r="30" fill="#A5D6A7" opacity=".5"/>
+  <circle cx="350" cy="250" r="40" fill="#81C784" opacity=".4"/>
+  <circle cx="380" cy="80" r="25" fill="#66BB6A" opacity=".3"/>
+  <path d="M200 120c0-20-30-40-50-20s-20 50 50 90 70-70 50-90-50 0-50 20" fill="url(#h)" transform="translate(0 20)"/>
+  <rect x="190" y="90" width="20" height="60" fill="#fff" rx="3"/>
+  <rect x="170" y="110" width="60" height="20" fill="#fff" rx="3"/>
+  <ellipse cx="200" cy="220" rx="25" ry="30" fill="#FFCC80"/>
+  <circle cx="200" cy="195" r="18" fill="#FFCC80"/>
+  <circle cx="194" cy="192" r="3" fill="#5D4037"/>
+  <circle cx="206" cy="192" r="3" fill="#5D4037"/>
+  <path d="M195 200q5 5 10 0" stroke="#5D4037" stroke-width="2" fill="none"/>
+  <path d="M80 200q20-20 40 0t-40 0" fill="#4CAF50"/>
+  <path d="M280 100q20-20 40 0t-40 0" fill="#4CAF50"/>
+  <path d="M100 150c0-5-5-10-10-5s-5 10 10 20 15-10 10-15-5-5-10 0" fill="#F48FB1" opacity=".7"/>
+  <path d="M300 180c0-5-5-10-10-5s-5 10 10 20 15-10 10-15-5-5-10 0" fill="#F48FB1" opacity=".7"/>
+  <rect x="50" y="250" width="300" height="40" fill="#fff" opacity=".9" rx="5"/>
+  <text x="200" y="275" font-family="Arial,sans-serif" font-size="14" font-weight="bold" fill="#2E7D32" text-anchor="middle">HYGIÈNE & SANTÉ</text>
+</svg>
