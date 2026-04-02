@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hygiène & Santé de la Reproduction - Étoiles d'Afrique</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brown: rgb(69, 43, 3);
+      --gold: rgb(251, 214, 5);
+      --dark: rgba(82, 50, 3, 1);
+    }
+    body { font-family: 'DM Sans', sans-serif; }
+    .nav-color { background-color: rgba(82, 50, 3, 0.9); }
+    .nav-text { color: #ffffff; font-weight: 500; }
+    .nav-link { color: white; }
+    .jaune { color: var(--gold); }
+    .logo { width: 5%; }
+    .hero-section {
+      background: linear-gradient(135deg, var(--brown), var(--dark));
+      color: white;
+      padding: 120px 0 60px;
+    }
+    .hero-section h1 { font-family: 'Playfair Display', serif; font-weight: 700; }
+    .section-title { font-family: 'Playfair Display', serif; font-weight: 700; color: var(--brown); }
+    .card {
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 30px;
+      border: none;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card-header {
+      background-color: var(--brown) !important;
+      color: white;
+      font-weight: 600;
+    }
+    .card-header h5 { margin: 0; }
+    .footer-section {
+      padding: 1rem 0;
+      text-align: center;
+      background-color: var(--dark);
+    }
+    .footer-section h3 { color: #ffffff; }
+    .footer-section address { color: #ffffff; font-size: 14px; }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 30px;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+    }
+    .whatsapp-float:hover { background-color: rgb(62, 202, 27); color: white; text-decoration: none; }
+    .feature-icon {
+      font-size: 2.5rem;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/221775516941" class="whatsapp-float" target="_blank" title="Contactez-nous sur WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg nav-color fixed-top">
+  <div class="container">
+    <img src="images/logo.jpeg" class="img rounded-circle logo" alt="Logo">
+    &nbsp; &nbsp;
+    <a class="navbar-brand nav-text" href="index.html">ÉTOILES D'AFRIQUE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <a href="#" class="btn btn-outline-primary"><i class="bi bi-facebook"></i></a>&nbsp;
+        <a href="#" class="btn btn-outline-info"><i class="bi bi-twitter"></i></a>&nbsp;
+        <a href="#" class="btn btn-outline-danger"><i class="bi bi-instagram"></i></a>&nbsp;
+        <a href="#" class="btn btn-outline-primary"><i class="bi bi-linkedin"></i></a>
+        </li> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+        <li class="nav-item"><a class="nav-link" href="index.html">ACCUEIL</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#apropos">À PROPOS</a></li>
+        <li class="nav-item"><a class="nav-link jaune" href="index.html#programmes">NOS PROGRAMMES</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#blog">BLOG</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">CONTACTS</a></li>
+        &nbsp;&nbsp;&nbsp;
+        <li class="nav-item">
+          <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#authModal">
+            <i class="bi bi-person-fill"></i>&nbsp;Se Connecter
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section text-center">
+  <div class="container">
+    <span class="badge bg-warning text-dark mb-3 px-3 py-2"><i class="bi bi-heart-pulse me-2"></i>Programme</span>
+    <h1 class="display-4 mb-3">Hygiène & Santé de la Reproduction</h1>
+    <p class="lead mb-0">Prévention, éducation et sensibilisation pour une vie saine et épanouie.</p>
+  </div>
+</section>
+
+<!-- Video & Presentation -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 d-flex align-items-center justify-content-center bg-warning p-4">
+      <div>
+        <h2 class="text-dark fw-bold">Éduquer pour protéger</h2>
+        <p class="text-muted">
+          Notre programme d'hygiène et de santé de la reproduction sensibilise les jeunes aux bonnes pratiques d'hygiène et à la santé reproductive pour favoriser leur bien-être.
+        </p>
+        <ul class="list-unstyled text-dark">
+          <li><i class="bi bi-check-circle-fill text-success"></i> Éducation à la santé reproductive</li>
+          <li><i class="bi bi-check-circle-fill text-success"></i> Prévention des IST et maladies</li>
+          <li><i class="bi bi-check-circle-fill text-success"></i> Hygiène corporelle et alimentaire</li>
+          <li><i class="bi bi-check-circle-fill text-success"></i> Accompagnement psychologique</li>
+        </ul>
+        <a href="inscription.html" class="btn btn-dark mt-3">S'INSCRIRE</a>
+      </div>
+    </div>
+    <div class="col-md-6 d-flex align-items-center justify-content-center p-0">
+      <img src="images/higiene.png" alt="Hygiène & Santé" style="width:100%; height:100%; object-fit:cover;">
+    </div>
+  </div>
+</div>
+
+<!-- Programmes Cards -->
+<div class="container py-5">
+  <h2 class="section-title text-center mb-5">Nos Modules de Santé</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <h5><i class="bi bi-droplet me-2"></i>Hygiène Corporelle</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Soins personnels quotidiens</li>
+          <li class="list-group-item">Hygiène des mains</li>
+          <li class="list-group-item">Hygiène bucco-dentaire</li>
+          <li class="list-group-item">Hygiène vestimentaire</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <h5><i class="bi bi-shield-plus me-2"></i>Prévention & Éducation</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Prévention des IST/VIH</li>
+          <li class="list-group-item">Sensibilisation à la santé reproductive</li>
+          <li class="list-group-item">Éducation sexuelle adaptée</li>
+          <li class="list-group-item">Planning familial</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <h5><i class="bi bi-heart me-2"></i>Bien-être Mental</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Gestion des émotions</li>
+          <li class="list-group-item">Estime de soi</li>
+          <li class="list-group-item">Soutien psychologique</li>
+          <li class="list-group-item">Communication saine</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Features -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row text-center g-4">
+      <div class="col-md-3">
+        <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+        <h5>Prévention</h5>
+        <p class="text-muted">Programmes de sensibilisation pour prévenir les risques liés à la santé.</p>
+      </div>
+      <div class="col-md-3">
+        <div class="feature-icon"><i class="bi bi-person-heart"></i></div>
+        <h5>Accompagnement</h5>
+        <p class="text-muted">Suivi individualisé par des professionnels de santé qualifiés.</p>
+      </div>
+      <div class="col-md-3">
+        <div class="feature-icon"><i class="bi bi-megaphone"></i></div>
+        <h5>Sensibilisation</h5>
+        <p class="text-muted">Campagnes de sensibilisation dans les écoles et communautés.</p>
+      </div>
+      <div class="col-md-3">
+        <div class="feature-icon"><i class="bi bi-book"></i></div>
+        <h5>Éducation</h5>
+        <p class="text-muted">Supports pédagogiques adaptés à chaque tranche d'âge.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<div id="contact" class="container-fluid footer-section py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 mb-3 mb-lg-0">
+        <h3>Nos Contacts</h3>
+        <address>
+          <i class="bi bi-phone me-2"></i> +221 77 551 69 41<br>
+          <i class="bi bi-telephone me-2"></i> +221 33 854 29 99<br>
+          <i class="bi bi-envelope me-2"></i> infos@etoilesdafrique.com<br>
+          <i class="bi bi-house-fill me-2"></i> Villa N° 133, Cité Aliou Sow, Mbao Face LGI
+        </address>
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <h3>Suivez-nous</h3>
+        <div class="d-flex justify-content-center">
+          <a href="#" class="btn btn-outline-light" title="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="btn btn-outline-light" title="Twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="btn btn-outline-light" title="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="btn btn-outline-light" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h3>Newsletter</h3>
+        <p style="color:white;">Restez informé de nos dernières actualités et offres !</p>
+        <form class="row g-2">
+          <div class="col-md-8">
+            <input type="email" class="form-control" placeholder="Votre adresse e-mail" required>
+          </div>
+          <div class="col-md-4">
+            <button type="submit" class="btn btn-warning w-100">S'inscrire</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <hr class="mt-3 mb-2 border-light">
+    <p class="text-center text-white mb-0">&copy; 2025 Étoiles d'Afrique. Tous droits réservés.</p>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

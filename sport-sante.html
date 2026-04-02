@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sport & Santé - Étoiles d'Afrique</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --brown: rgb(69, 43, 3);
+      --gold: rgb(251, 214, 5);
+      --dark: rgba(82, 50, 3, 1);
+    }
+    body { font-family: 'DM Sans', sans-serif; }
+    .nav-color { background-color: rgba(82, 50, 3, 0.9); }
+    .nav-text { color: #ffffff; font-weight: 500; }
+    .nav-link { color: white; }
+    .jaune { color: var(--gold); }
+    .logo { width: 5%; }
+    .hero-section {
+      background: linear-gradient(135deg, var(--brown), var(--dark));
+      color: white;
+      padding: 120px 0 60px;
+    }
+    .hero-section h1 { font-family: 'Playfair Display', serif; font-weight: 700; }
+    .section-title { font-family: 'Playfair Display', serif; font-weight: 700; color: var(--brown); }
+    .card {
+      border-radius: 10px;
+      overflow: hidden;
+      margin-bottom: 30px;
+      border: none;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .card:hover { transform: translateY(-5px); }
+    .card-header {
+      background-color: var(--brown) !important;
+      color: white;
+      font-weight: 600;
+    }
+    .card-header h5 { margin: 0; }
+    .footer-section {
+      padding: 1rem 0;
+      text-align: center;
+      background-color: var(--dark);
+    }
+    .footer-section h3 { color: #ffffff; }
+    .footer-section address { color: #ffffff; font-size: 14px; }
+    .whatsapp-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      border-radius: 50%;
+      padding: 15px;
+      font-size: 30px;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: background-color 0.3s ease;
+    }
+    .whatsapp-float:hover { background-color: rgb(62, 202, 27); color: white; text-decoration: none; }
+    .feature-icon {
+      font-size: 2.5rem;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/221775516941" class="whatsapp-float" target="_blank" title="Contactez-nous sur WhatsApp">
+  <i class="bi bi-whatsapp"></i>
+</a>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg nav-color fixed-top">
+  <div class="container">
+    <img src="images/logo.jpeg" class="img rounded-circle logo" alt="Logo">
+    &nbsp; &nbsp;
+    <a class="navbar-brand nav-text" href="index.html">ÉTOILES D'AFRIQUE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <a href="#" class="btn btn-outline-primary"><i class="bi bi-facebook"></i></a>&nbsp;
+        <a href="#" class="btn btn-outline-info"><i class="bi bi-twitter"></i></a>&nbsp;
+        <a href="#" class="btn btn-outline-danger"><i class="bi bi-instagram"></i></a>&nbsp;
+        <a href="#" class="btn btn-outline-primary"><i class="bi bi-linkedin"></i></a>
+        </li> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+        <li class="nav-item"><a class="nav-link" href="index.html">ACCUEIL</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#apropos">À PROPOS</a></li>
+        <li class="nav-item"><a class="nav-link jaune" href="index.html#programmes">NOS PROGRAMMES</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#blog">BLOG</a></li>
+        <li class="nav-item"><a class="nav-link" href="index.html#contact">CONTACTS</a></li>
+        &nbsp;&nbsp;&nbsp;
+        <li class="nav-item">
+          <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#authModal">
+            <i class="bi bi-person-fill"></i>&nbsp;Se Connecter
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero-section text-center">
+  <div class="container">
+    <span class="badge bg-warning text-dark mb-3 px-3 py-2"><i class="bi bi-trophy-fill me-2"></i>Programme</span>
+    <h1 class="display-4 mb-3">Sport & Santé</h1>
+    <p class="lead mb-0">Suivi personnalisé, conseils nutritionnels et programmes sportifs pour le bien-être de chaque apprenant.</p>
+  </div>
+</section>
+
+<!-- Video & Presentation -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 d-flex align-items-center justify-content-center bg-warning p-4">
+      <div>
+        <h2 class="text-dark fw-bold">Bouger, c'est apprendre mieux</h2>
+        <p class="text-muted">
+          Chez Étoiles d'Afrique, nous intégrons le sport et la nutrition au cœur du parcours éducatif pour favoriser l'épanouissement physique et mental.
+        </p>
+        <ul class="list-unstyled text-dark">
+          <li><i class="bi bi-check-circle-fill text-success"></i> Programmes sportifs adaptés à chaque âge</li>
+          <li><i class="bi bi-check-circle-fill text-success"></i> Suivi nutritionnel personnalisé</li>
+          <li><i class="bi bi-check-circle-fill text-success"></i> Coachs diplômés et expérimentés</li>
+          <li><i class="bi bi-check-circle-fill text-success"></i> Activités physiques variées et ludiques</li>
+        </ul>
+        <a href="inscription.html" class="btn btn-dark mt-3">S'INSCRIRE</a>
+      </div>
+    </div>
+    <div class="col-md-6 d-flex align-items-center justify-content-center p-0">
+      <img src="images/EACOURSSPORTS.jpg" alt="Sport & Santé" style="width:100%; height:100%; object-fit:cover;">
+    </div>
+  </div>
+</div>
+
+<!-- Programmes Cards -->
+<div class="container py-5">
+  <h2 class="section-title text-center mb-5">Nos Modules Sport & Santé</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <h5><i class="bi bi-activity me-2"></i>Éducation Physique</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Athlétisme</li>
+          <li class="list-group-item">Football</li>
+          <li class="list-group-item">Basketball</li>
+          <li class="list-group-item">Gymnastique</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <h5><i class="bi bi-heart-pulse me-2"></i>Nutrition & Bien-être</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Conseils nutritionnels</li>
+          <li class="list-group-item">Plans alimentaires sains</li>
+          <li class="list-group-item">Hydratation & récupération</li>
+          <li class="list-group-item">Gestion du stress</li>
+        </ul>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <div class="card-header">
+          <h5><i class="bi bi-people me-2"></i>Sport Collectif</h5>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">Volleyball</li>
+          <li class="list-group-item">Handball</li>
+          <li class="list-group-item">Badminton</li>
+          <li class="list-group-item">Sports d'équipe</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Features -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <div class="row text-center g-4">
+      <div class="col-md-3">
+        <div class="feature-icon"><i class="bi bi-person-check"></i></div>
+        <h5>Suivi Personnalisé</h5>
+        <p class="text-muted">Chaque apprenant bénéficie d'un programme adapté à ses besoins et objectifs.</p>
+      </div>
+      <div class="col-md-3">
+        <div class="feature-icon"><i class="bi bi-award"></i></div>
+        <h5>Coachs Certifiés</h5>
+        <p class="text-muted">Une équipe de professionnels diplômés pour encadrer les activités.</p>
+      </div>
+      <div class="col-md-3">
+        <div class="feature-icon"><i class="bi bi-graph-up"></i></div>
+        <h5>Suivi des Progrès</h5>
+        <p class="text-muted">Évaluations régulières pour mesurer l'évolution de chaque participant.</p>
+      </div>
+      <div class="col-md-3">
+        <div class="feature-icon"><i class="bi bi-shield-check"></i></div>
+        <h5>Sécurité Garantie</h5>
+        <p class="text-muted">Environnement sécurisé et matériel adapté pour toutes les activités.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<div id="contact" class="container-fluid footer-section py-4">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 mb-3 mb-lg-0">
+        <h3>Nos Contacts</h3>
+        <address>
+          <i class="bi bi-phone me-2"></i> +221 77 551 69 41<br>
+          <i class="bi bi-telephone me-2"></i> +221 33 854 29 99<br>
+          <i class="bi bi-envelope me-2"></i> infos@etoilesdafrique.com<br>
+          <i class="bi bi-house-fill me-2"></i> Villa N° 133, Cité Aliou Sow, Mbao Face LGI
+        </address>
+      </div>
+      <div class="col-lg-4 mb-4 mb-lg-0">
+        <h3>Suivez-nous</h3>
+        <div class="d-flex justify-content-center">
+          <a href="#" class="btn btn-outline-light" title="Facebook"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="btn btn-outline-light" title="Twitter"><i class="bi bi-twitter"></i></a>
+          <a href="#" class="btn btn-outline-light" title="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="btn btn-outline-light" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <h3>Newsletter</h3>
+        <p style="color:white;">Restez informé de nos dernières actualités et offres !</p>
+        <form class="row g-2">
+          <div class="col-md-8">
+            <input type="email" class="form-control" placeholder="Votre adresse e-mail" required>
+          </div>
+          <div class="col-md-4">
+            <button type="submit" class="btn btn-warning w-100">S'inscrire</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <hr class="mt-3 mb-2 border-light">
+    <p class="text-center text-white mb-0">&copy; 2025 Étoiles d'Afrique. Tous droits réservés.</p>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
